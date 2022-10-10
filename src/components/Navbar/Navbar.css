@@ -1,0 +1,30 @@
+.navbar{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.site-name{
+
+    color:rgba(107, 107, 255, 0.705) ;
+}
+.link a{
+    text-decoration: none;
+    /* margin-right: 30px;
+    margin-left: 10px; */
+    color: rgb(99, 98, 98);
+    font-size: larger;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    
+}
+
+.navbar a:hover{
+    color: rgba(107, 107, 255, 0.705);
+    border: 1px solid rgba(107, 107, 255, 0.705);
+    border-radius: 8px;
+    
+
+
+}
