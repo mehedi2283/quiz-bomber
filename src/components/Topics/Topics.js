@@ -14,24 +14,23 @@ const Topics = () => {
 
     return (
         <div>
-            <header className='header mb-8 mx-auto'>
+            <header className='header mb-32 mt-40 mx-auto'>
                 <div className='text-center flex flex-col items-center'>
                     <div>
                         <h1 className=' font-black text-5xl'>Welcome to Quiz Bomber.</h1>
                         <br /><br /> <br /><br />
                         <h3>Please select a topic from bellow.</h3>
                     </div>
-                    br
                     
-                    <div>
-                        <ChevronDoubleDownIcon className="h-6 w-6 text-center " />
+                    <div className='transition ease-in-out  hover:translate-y-4 hover:scale-150 duration-300'>
+                        <a className='hover:text-sky-600 hover:translate-y-8 transition' href="#topics"><ChevronDoubleDownIcon className="h-6 w-6 text-center " /></a>
                     </div>
                 </div>
 
 
             </header>
 
-            <div className='grid grid-cols-4 justify-items-center w-9/12 mx-auto pb-10'>
+            <div id='topics' className='grid grid-cols-4 justify-items-center w-9/12 mx-auto pb-10'>
                {topics.data.map( topic => <Topic
                 topic= {topic}
                 key = {topic.id}
