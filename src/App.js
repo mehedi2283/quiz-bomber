@@ -13,6 +13,7 @@ function App() {const router = createBrowserRouter([
     children:[
       {
         path: '/',
+        loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
         element:<Topics></Topics>
       },
       {
@@ -25,13 +26,14 @@ function App() {const router = createBrowserRouter([
       },
   
   
-    ]
+    ],
+    
   }
 
   
 ])
 return (
-  <div className='app-container'>
+  <div className='app-container '>
     <RouterProvider router={router}></RouterProvider>
   </div>
 );

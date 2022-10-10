@@ -16,7 +16,7 @@
     font-size: larger;
     font-weight: bolder;
     padding: 5px 10px;
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0);
     
 }
 

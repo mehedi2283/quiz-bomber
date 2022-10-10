@@ -4,7 +4,7 @@ import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <div className='navbar py-2'>
+        <div className='navbar py-2 sticky top-0 bg-gray-300'>
             <div className='name'>
                 <Link to="/"><h1 className='text-violet-400 font-black text-2xl'>Quiz Bomber</h1></Link>
             </div>
