@@ -1,9 +1,9 @@
 import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import Option from '../Option/Option';
+import { ToastContainer, toast } from 'react-toastify';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import './QuizQuestions.css'
+import 'react-toastify/dist/ReactToastify.css';
 
 const customId = "custom-id-yes";
 
@@ -12,7 +12,7 @@ const QuizQuestions = ({ question }) => {
   // console.log(question);
 
   // alert(`Correct ans: ${question.correctAnswer}`)
-  const showCorrectAns = () => {
+  const showCorrectAns = () => 
     toast.info(`Correct ans: ${question.correctAnswer}`, {
       position: "top-center",
       autoClose: 1000,
@@ -24,7 +24,7 @@ const QuizQuestions = ({ question }) => {
       theme: "dark",
       toastId: customId
       });
-    }
+    
     const selectedOption = (id) =>{
       if (id===question.correctAnswer) {
         toast.success(`Correct Ans: Good Job`, {

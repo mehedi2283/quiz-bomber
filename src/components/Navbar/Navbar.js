@@ -6,7 +6,7 @@ const Navbar = () => {
 
     
     return (
-        <div className='navbar py-2 sticky top-0 bg-gray-700 z-50'>
+        <div className='navbar py-2 sticky top-0 bg-gray-700 z-50 '>
             <div className='site-name'>
                 <Link to="/topics"><h1 className=' font-black text-2xl'>Quiz Bomber</h1></Link>
             </div>

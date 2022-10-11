@@ -30,7 +30,7 @@ const Topics = () => {
 
             </header>
 
-            <div id='topics' className='grid grid-cols-4 justify-items-center w-9/12 mx-auto pb-10'>
+            <div id='topics' className='grid grid-cols-4 justify-items-center w-9/12 mx-auto pb-96'>
                {topics.data.map( topic => <Topic
                 topic= {topic}
                 key = {topic.id}
