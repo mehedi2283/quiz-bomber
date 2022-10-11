@@ -1,3 +1,8 @@
+* used tailwind and normal css 
+* made responsive for all devicec
+* 404 route added
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
