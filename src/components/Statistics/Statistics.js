@@ -29,7 +29,7 @@ const Statistics = () => {
 
     
     return (
-        <div  className='flex justify-center mt-52 pb-32 duration-300'>
+        <div  className='flex justify-center mt-12 pb-8 duration-300'>
             <ResponsiveContainer width="70%" height={580}>
             <BarChart  data={stat}>
                 <Bar dataKey="Quiz" fill="#8884d8" />

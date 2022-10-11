@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import {
     Accordion,
     AccordionHeader,
@@ -30,6 +30,10 @@ export default function Example() {
 
     return (
             <div className="w-3/4 flex flex-col justify-center mx-auto">
+                <div className="text-center py-36 ">
+                    <h1 className=" font-black text-5xl mb-6 text-indigo-500">Welcome to my blog page</h1>
+                    <p className=" text-xl text-indigo-500 font-bold">Some of the questions about react router are given below</p>
+                </div>
             
                 <Accordion className="text-center" open={open === 1} icon={<Icon id={1} open={open} />}>
                     <AccordionHeader className=" text-center" onClick={() => handleOpen(1)}>
