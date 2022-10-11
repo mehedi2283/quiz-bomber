@@ -5,6 +5,8 @@ import Option from '../Option/Option';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import './QuizQuestions.css'
 
+const customId = "custom-id-yes";
+
 
 const QuizQuestions = ({ question }) => {
   // console.log(question);
@@ -20,6 +22,7 @@ const QuizQuestions = ({ question }) => {
       draggable: true,
       progress: undefined,
       theme: "dark",
+      toastId: customId
       });
     }
     const selectedOption = (id) =>{
@@ -33,6 +36,7 @@ const QuizQuestions = ({ question }) => {
           draggable: true,
           progress: undefined,
           theme: "dark",
+          toastId: customId
           });
       }
       else{
@@ -45,6 +49,7 @@ const QuizQuestions = ({ question }) => {
           draggable: true,
           progress: undefined,
           theme: "dark",
+          toastId: customId
           });
       }
 

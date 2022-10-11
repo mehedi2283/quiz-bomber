@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Bar, BarChart, XAxis, YAxis,Tooltip } from 'recharts';
+import { Bar, BarChart, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 const Statistics = () => {
@@ -29,14 +29,16 @@ const Statistics = () => {
 
     
     return (
-        <div  className='flex justify-center mt-52 pb-72 duration-300'>
-            
-            <BarChart width={400} height={400} data={stat}>
+        <div  className='flex justify-center mt-52 pb-32 duration-300'>
+            <ResponsiveContainer width="70%" height={600}>
+            <BarChart  data={stat}>
                 <Bar dataKey="Quiz" fill="#8884d8" />
                 <XAxis dataKey="name" />
                 <YAxis dataKey="Quiz"/>
                 <Tooltip></Tooltip>
             </BarChart>
+            
+            </ResponsiveContainer>
             
 
         </div>
