@@ -21,7 +21,7 @@ const Statistics = () => {
                     // console.log(totalQuiz);
                     // console.log(quizStat);
                 })
-                console.log(quizStat);
+                // console.log(quizStat);
 
                 setStat(quizStat)
             })
