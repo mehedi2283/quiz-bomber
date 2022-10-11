@@ -1,0 +1,12 @@
+@media (max-width: 1400px) {
+    .quiz-question{
+     flex-direction: column;
+     
+    }
+   }
+@media (max-width: 1000px) {
+    .quiz-option{
+     grid-template-columns: repeat(1,1fr);
+     
+    }
+   }

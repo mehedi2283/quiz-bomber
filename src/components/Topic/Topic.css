@@ -8,3 +8,30 @@
   .btn2:hover span{
     transform: translateX(0)
   }
+  
+  @media (max-width: 1100px) {
+    .topic-card img{
+      height: 290px;
+    }
+    }
+  @media (max-width: 800px) {
+    .topic-card img{
+      height: 500px;
+      
+    }
+    }
+  @media (max-width: 680px) {
+    .topic-card img{
+      height: 300px;
+      width: 350px;
+      
+    }
+    }
+  @media (max-width: 450px) {
+    .topic-card img{
+      height: 200px;
+      width: 300px;
+      
+    }
+    }
+    

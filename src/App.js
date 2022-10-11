@@ -52,7 +52,7 @@ function App() {
       element: <div className='text-6xl bg-white text-center mt-52 text-orange-900 font-black'>
         <h1>No Route Found!</h1>
 
-        <ExclamationTriangleIcon className='h-32 w-32 text-center mx-auto'></ExclamationTriangleIcon>
+        <ExclamationTriangleIcon className='h-32 w-32 text-center mx-auto animate-bounce mt-6'></ExclamationTriangleIcon>
 
       </div>
     }

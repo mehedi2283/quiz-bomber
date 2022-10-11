@@ -10,7 +10,7 @@ const Option = ({ option, selectedOption }) => {
             <button onClick={() => selectedOption(option)} className='w-full hover:bg-purple-300 p-3' type="">{option}</button>
             <ToastContainer
                 position="top-center"
-                autoClose={2000}
+                autoClose={1000}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick

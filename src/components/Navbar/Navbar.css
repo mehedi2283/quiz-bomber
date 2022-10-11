@@ -35,6 +35,12 @@
     border-radius: 8px;
     color: white;
 }
-.active a{
-    
+@media (max-width: 750px) {
+    .navbar{
+        flex-direction: column;
+        
+   }
+   .link{
+    width: 70%;
+   }
 }

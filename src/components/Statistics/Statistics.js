@@ -31,7 +31,7 @@ const Statistics = () => {
     return (
         <div  className='flex justify-center mt-52 pb-72 duration-300'>
             
-            <BarChart width={1100} height={400} data={stat}>
+            <BarChart width={400} height={400} data={stat}>
                 <Bar dataKey="Quiz" fill="#8884d8" />
                 <XAxis dataKey="name" />
                 <YAxis dataKey="Quiz"/>

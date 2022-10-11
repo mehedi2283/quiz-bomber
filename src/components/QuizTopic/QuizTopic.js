@@ -11,7 +11,7 @@ const QuizTopic = () => {
     // console.log(questions);
     // console.log(quizDetails);
     return (
-        <div className='text-center text-violet-900 mt-6'>
+        <div className='text-center text-violet-900 mt-6 pb-12'>
             <h1 className=' text-2xl font-black'>Quiz of {name} </h1>
             <div className='mt-6'>
                 {

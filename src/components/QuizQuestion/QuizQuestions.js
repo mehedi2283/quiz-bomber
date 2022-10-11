@@ -3,6 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Option from '../Option/Option';
 import { EyeIcon } from '@heroicons/react/24/solid'
+import './QuizQuestions.css'
 
 
 const QuizQuestions = ({ question }) => {
@@ -54,7 +55,7 @@ const QuizQuestions = ({ question }) => {
     <div className=' shadow-2xl w-1/2 mx-auto mt-24 ' >
       <div >
         <br />
-        <div className='flex items-center justify-between px-10'>
+        <div className='flex items-center justify-between px-10 quiz-question'>
           <h1 className=' text-lg font-bold  text-center'>
             {question.question}
           </h1>
@@ -62,7 +63,7 @@ const QuizQuestions = ({ question }) => {
             <button onClick={showCorrectAns} ><EyeIcon className=' h-6 w-6 hover:text-purple-500 text-purple-300'></EyeIcon></button>
             <ToastContainer
               position="top-center"
-              autoClose={2000}
+              autoClose={1000}
               hideProgressBar={false}
               newestOnTop={false}
               closeOnClick
@@ -76,10 +77,11 @@ const QuizQuestions = ({ question }) => {
 
         </div>
         <br />
-        <div className='grid grid-cols-2 gap-1 px-4'>
+        <div className='grid grid-cols-2 gap-1 px-4 quiz-option'>
           {
-            question.options.map(option => <Option
+            question.options.map((option,i) => <Option
               option={option}
+              key={i}
               selectedOption={selectedOption}
             ></Option>)
           }
