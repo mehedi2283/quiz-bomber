@@ -22,7 +22,7 @@ const Topics = () => {
                         <h3>Please select a topic from bellow.</h3>
                     </div>
                     
-                    <div className='transition ease-in-out  hover:translate-y-4 hover:scale-150 duration-300'>
+                    <div className=' duration-300 animate-bounce'>
                         <a className='hover:text-sky-600 hover:translate-y-8 transition' href="#topics"><ChevronDoubleDownIcon className="h-6 w-6 text-center " /></a>
                     </div>
                 </div>

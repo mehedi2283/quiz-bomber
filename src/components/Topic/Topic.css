@@ -1,3 +1,10 @@
 .topic-card:hover{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+.btn2 span:first-child{
+    transform: translateX(-101%);
+    transition: transform .3s ease-in
+  }
+  .btn2:hover span{
+    transform: translateX(0)
+  }
