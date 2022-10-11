@@ -29,8 +29,8 @@ export default function Example() {
     };
 
     return (
-        <div className=" w-3/4 mx-auto">
-            <Fragment>
+            <div className="w-3/4 flex flex-col justify-center mx-auto">
+            
                 <Accordion className="text-center" open={open === 1} icon={<Icon id={1} open={open} />}>
                     <AccordionHeader className=" text-center" onClick={() => handleOpen(1)}>
                         What is the purpose of react router?
@@ -59,7 +59,7 @@ export default function Example() {
                         <p>* It can be used to access a DOM element directly.</p>
                     </AccordionBody>
                 </Accordion>
-            </Fragment>
-        </div>
+           
+            </div>
     );
 }

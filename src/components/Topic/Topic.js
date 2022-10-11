@@ -1,9 +1,13 @@
 import React from 'react';
 import { ChevronDoubleRightIcon } from '@heroicons/react/24/solid'
 import './Topic.css'
+import { useNavigate, Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
-    const { logo, name, total } = topic
+    const { logo, name, total, id } = topic
+
+    
+
     return (
         <div className=' topic-card bg-slate-300 rounded-lg hover:shadow-2xl px-2transition ease-in-out  hover:-translate-y-1 hover:scale-110  duration-100'>
             <img className=' h-72 ' src={logo} alt="" />
@@ -18,13 +22,16 @@ const Topic = ({ topic }) => {
                     <ChevronDoubleRightIcon className='h-6 w-6 text-white '></ChevronDoubleRightIcon>
                 </div>
             </button> */}
-            <button class="bg-blue-500 text-white duration-300 w-full btn2 mt-12 px-10 py-5 relative rounded-b-lg uppercase font-semibold tracking-wider leading-none overflow-hidden hover:text-teal-600" type="button">
-                <span class="absolute inset-0 bg-white"></span>
-                <span class="absolute inset-0 flex justify-around items-center font-bold hover:translate-x-6">
-                <p>Start Preactice</p>
-                    <ChevronDoubleRightIcon className='h-6 w-6 '></ChevronDoubleRightIcon>
-                </span>
-            </button>
+            <Link to={`/quiz/${id}`}>
+
+                <button className="bg-blue-500 text-white duration-300 w-full btn2 mt-12 px-10 py-5 relative rounded-b-lg uppercase font-semibold tracking-wider leading-none       overflow-hidden hover:text-teal-600" type="button">
+                    <span className="absolute inset-0 bg-white"></span>
+                    <span className="absolute inset-0 flex justify-around items-center font-bold hover:translate-x-6">
+                        <p>Start Practice</p>
+                        <ChevronDoubleRightIcon className='h-6 w-6 '></ChevronDoubleRightIcon>
+                    </span>
+                </button>
+            </Link>
         </div>
     );
 };
