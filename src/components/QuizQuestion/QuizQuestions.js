@@ -5,7 +5,7 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 import './QuizQuestions.css'
 import 'react-toastify/dist/ReactToastify.css';
 
-// const customId = "custom-id-yes";
+const customId = "custom-id-yes";
 
 
 const QuizQuestions = ({ question }) => {
@@ -16,19 +16,19 @@ const QuizQuestions = ({ question }) => {
   // cons normalQuestion = slice
   const showCorrectAns = () => {
     toast.info(`Correct ans: ${question.correctAnswer}`,{
-      // toastId:customId
+      toastId:customId
     });
   }
     
     const selectedOption = (id) =>{
       if (id===question.correctAnswer) {
         toast.success(`Correct Ans: Good Job`,{
-          // toastId:customId
+          toastId:customId
         });
       }
       else{
         toast.error(`Wrong Ans: Keep Practicing`,{
-          // toastId:customId
+          toastId:customId
         });
       }
 
@@ -45,20 +45,7 @@ const QuizQuestions = ({ question }) => {
           </h1>
           <div>
             <button onClick={showCorrectAns} ><EyeIcon className=' h-6 w-6 hover:text-purple-500 text-purple-300'></EyeIcon></button>
-            <ToastContainer
-                position="top-center"
-                autoClose={700}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                // draggable
-                pauseOnHover={false}
-                theme="dark"
-                
-            ></ToastContainer>
-           
+            
           </div>
 
         </div>
