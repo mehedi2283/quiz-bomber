@@ -1,6 +1,6 @@
 import React from 'react';
 import Option from '../Option/Option';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import './QuizQuestions.css'
 import 'react-toastify/dist/ReactToastify.css';

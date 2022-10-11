@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronDoubleRightIcon } from '@heroicons/react/24/solid'
 import './Topic.css'
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
     const { logo, name, total, id } = topic

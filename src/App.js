@@ -6,7 +6,7 @@ import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
 import Blogs from './components/Blogs/Blogs';
 import QuizTopic from './components/QuizTopic/QuizTopic';
-import { ChevronDoubleDownIcon, EmojiSad, ExclamationTriangleIcon } from '@heroicons/react/24/solid'
+import { ExclamationTriangleIcon } from '@heroicons/react/24/solid'
 
 
 
