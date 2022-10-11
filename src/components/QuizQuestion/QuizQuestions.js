@@ -44,7 +44,7 @@ const QuizQuestions = ({ question }) => {
             <button onClick={showCorrectAns} ><EyeIcon className=' h-6 w-6 hover:text-purple-500 text-purple-300'></EyeIcon></button>
             <ToastContainer
                 position="top-center"
-                autoClose={10000}
+                autoClose={1000}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
