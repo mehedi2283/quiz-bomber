@@ -12,6 +12,8 @@ const QuizQuestions = ({ question }) => {
   // console.log(question);
 
   // alert(`Correct ans: ${question.correctAnswer}`)
+  console.log();
+  // cons normalQuestion = slice
   const showCorrectAns = () => 
     toast.info(`Correct ans: ${question.correctAnswer}`,{
       toastId:customId
@@ -38,7 +40,7 @@ const QuizQuestions = ({ question }) => {
         <br />
         <div className='flex items-center justify-between px-10 quiz-question'>
           <h1 className=' text-lg font-bold  text-center'>
-            {question.question}
+            {(question.question).slice(3,-4)}
           </h1>
           <div>
             <button onClick={showCorrectAns} ><EyeIcon className=' h-6 w-6 hover:text-purple-500 text-purple-300'></EyeIcon></button>
