@@ -8,11 +8,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const QuizQuestions = ({ question }) => {
-  // console.log(question);
+  
 
   // alert(`Correct ans: ${question.correctAnswer}`)
   console.log();
-  // cons normalQuestion = slice
+  
   const showCorrectAns = () => {
     toast.info(`Correct ans: ${question.correctAnswer}`,{
       // toastId:customId
@@ -43,7 +43,6 @@ const QuizQuestions = ({ question }) => {
               key={i}
               question={question}
               ans={question.correctAnswer}
-              // id={id}
             ></Option>)
           }
         </div>

@@ -18,10 +18,8 @@ const Statistics = () => {
                         Quiz: totalQuiz
                     }
                     return singleQuiz
-                    // console.log(totalQuiz);
-                    // console.log(quizStat);
                 })
-                // console.log(quizStat);
+               
 
                 setStat(quizStat)
             })
