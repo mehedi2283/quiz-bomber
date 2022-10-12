@@ -5,7 +5,6 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 import './QuizQuestions.css'
 import 'react-toastify/dist/ReactToastify.css';
 
-const customId = "custom-id-yes";
 
 
 const QuizQuestions = ({ question }) => {
@@ -16,24 +15,11 @@ const QuizQuestions = ({ question }) => {
   // cons normalQuestion = slice
   const showCorrectAns = () => {
     toast.info(`Correct ans: ${question.correctAnswer}`,{
-      toastId:customId
+      // toastId:customId
     });
   }
     
-    const selectedOption = (id) =>{
-      if (id===question.correctAnswer) {
-        toast.success(`Correct Ans: Good Job`,{
-          toastId:customId
-        });
-      }
-      else{
-        toast.error(`Wrong Ans: Keep Practicing`,{
-          toastId:customId
-        });
-      }
-
-  }
-
+   
 
   return (
     <div className=' shadow-2xl w-1/2 mx-auto mt-24 ' >
@@ -55,7 +41,9 @@ const QuizQuestions = ({ question }) => {
             question.options.map((option,i) => <Option
               option={option}
               key={i}
-              selectedOption={selectedOption}
+              question={question}
+              ans={question.correctAnswer}
+              // id={id}
             ></Option>)
           }
         </div>
